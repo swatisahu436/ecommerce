@@ -4,7 +4,7 @@ import { products } from '../Utils/mockData';
 
 
 const CartPage = () => {
-    const { cart, loading, removeFromCart } = useContext(CartContext);
+    const { cart, removeFromCart } = useContext(CartContext);
    
       
     const cartItems = cart.map((productId) => {
@@ -22,14 +22,14 @@ const CartPage = () => {
                 <li key={index} style={{ listStyleType: 'none' }}>
                      <div className='parti_container'  >
                      <div className='parti_class1' style={{width:'400px',margin:'8px'}}>
-                       <img className='Link_img' style={{ height: '200px',width:'200px' }}src={product.image} alt={product.name} />
+                       <img className='Link_img' style={{ height: '200px',width:'200px' }} src={product.image} alt={product.name} />
                      </div>
                         <div className='parti_class2'>
                          <h1>{product.name}</h1>
                          <p>{product.description}</p>
                          <p>Rs.{product.price}</p>
                         </div>
-                        <button style={{height:'40px',width:'80px',marginTop:'90px', backgroundColor: 'yellow',  fontWeight: 'bold' }}  onClick={() => handleDelete(product.id) }>Delete</button>
+                        <button style={{height:'40px',width:'80px',marginTop:'90px',  fontWeight: 'bold' }} src="" onClick={() => handleDelete(product.id) }>Delete</button>
                     </div>
                     </li>
             ))}

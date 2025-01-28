@@ -14,6 +14,7 @@ const Header = () => {
                     className='logo'
                     src={LOG_URL} alt="soory" />
              </Link>
+             <h2 style={{color:"white"}}>MobiMart</h2>
              </div>
            
           <ul id="navbar">

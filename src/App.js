@@ -6,6 +6,7 @@ import Header from './Component/Header';
 import './App.css';
 import { CartProvider } from './Component/CartContext';
 import CartPage from './Component/CartPage';
+import Footer from './Component/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/phone/:id" element={<PhoneDetail />} />
           <Route path='/cart' element={<CartPage/>}></Route>
         </Routes>
+        <Footer/>
       </CartProvider>
     </BrowserRouter>
   );

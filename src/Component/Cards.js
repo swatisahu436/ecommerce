@@ -14,3 +14,10 @@ const Card = ({ product }) => {
 };
 
 export default Card;
+
+
+
+
+//here product variable is just a variable (it can be x,y,z),the card.js file is imported in body.js file ,where it is use as identification of each productdescription:product
+
+

@@ -14,7 +14,7 @@ h1 {
   color: rgb(117, 119, 109);
 }
 
-.nav {
+.nav{
   height: 80px;
   width: 100%; /* Set to 100% to cover the full width of the viewport */
   border: 2px solid black;
@@ -33,14 +33,18 @@ h1 {
 .logHead{
   opacity: 1;
   z-index:0;
-  margin:6px;
+  margin:10px;
+ gap: 19px;
   position: relative ;
    /* Corrected this line */
+   display: flex;
+   
   
 }
 .logo{
   height: 65px;
   width: 80px;
+  margin-top: 8px;
   border-radius: 25px;
   border: 3px solid white;
 }
@@ -210,4 +214,66 @@ img {
 
 .button1:active, .button2:active {
   background-color: #003d80;
+}
+/*Footer*/
+.foot {
+  background-color: rgb(236, 229, 229);
+  margin-top: 40px;
+
+}
+.foot_two{
+  padding: 30px 220px;
+  width: auto;
+  display:flex;
+ 
+}
+.foot_out {
+  display: grid;
+  
+}
+.foot_out h5{
+  margin-top: 0%;
+  padding-top: 0%;
+  color: rgb(92, 97, 97);
+}
+.foot_in {
+  display: flex;
+  margin-left: 50px;
+  width: fit-content;
+
+ 
+}
+.foot_in ul {
+   display: flex;
+   margin-top: 0px;
+   padding-top: 0%;
+}
+.foot_in ul h4 {
+  width: 160px;
+  padding-top: 0%;
+}
+.tags {
+  display: flex;
+  padding-left: 0%;
+  padding-top: 2%;
+  gap: 15px;
+  
+}
+.tags img {
+  width: 30px; /* Set width for icons */
+  height: 30px; /* Set height for icons */
+  object-fit: contain; /* Ensure they don't stretch */
+}
+.app_line{
+  margin-right: 8%;
+}
+.app_down {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 160px;
+}
+.app_down img {
+  width: 120px; /* Adjust width of app store images */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
 }
